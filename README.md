@@ -115,3 +115,38 @@ The trained model was successfully deployed as a **real-time online endpoint**, 
 ---
 
 ## Repository Structure
+azure-ml-studio-end-to-end-project/
+│
+├── README.md
+│
+└── screenshots/
+    ├── workspace.png
+    ├── dataset.png
+    ├── compute-cluster.png
+    ├── automl-run.png
+    ├── best-model.png
+    ├── designer-training-pipeline.png
+    ├── designer-inference-pipeline.png
+    └── endpoint.png
+
+---
+
+## Key Skills Demonstrated
+- Azure Machine Learning Studio  
+- Automated Machine Learning (AutoML)  
+- Designer Pipelines  
+- Compute Cluster Configuration  
+- Model Evaluation and Selection  
+- Real-Time Model Deployment  
+- End-to-End ML Lifecycle Management  
+
+---
+
+## Conclusion
+This project demonstrates hands-on experience in building, training, and deploying an end-to-end machine learning solution using Azure ML Studio. It reflects practical exposure to enterprise-grade ML workflows and Azure-native machine learning tools.
+
+---
+
+## Author
+**Mariyam Khan**
+
