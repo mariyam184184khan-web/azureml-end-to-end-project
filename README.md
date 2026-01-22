@@ -94,12 +94,42 @@ Screenshots demonstrate both the training pipeline and the real-time inference p
 
 ---
 
-## Model Deployment
+## Model Deployment and Real-Time Inference
 - **Deployment Method:** Azure ML Designer Real-Time Inference  
-- **Endpoint Type:** Managed Online Endpoint  
+- **Endpoint Type:** Real-time inference endpoint (Azure Container Instance)  
 - **Authentication:** Key-based authentication  
 
-The trained model was successfully deployed as a **real-time online endpoint**, enabling inference through a REST API. The endpoint configuration and deployment status are documented through screenshots included in this repository.
+The trained model was deployed as a real-time inference endpoint using Azure Machine Learning Designer.
+The deployment exposes the model as a REST API hosted on Azure Container Instance, allowing external
+clients to send HTTP POST requests and receive predictions in real time.
+
+### Endpoint Status
+![Endpoint Status](screenshots/endpoint-status.png)
+
+### API Testing using Postman
+The deployed endpoint was tested using Postman to validate real-time inference functionality.
+A POST request with patient health attributes was sent to the REST endpoint, and the service
+returned the predicted diabetes outcome along with a confidence score.
+
+#### Sample Request
+```json
+{
+  "Inputs": {
+    "input1": [
+      {
+        "Pregnancies": 6,
+        "Glucose": 148,
+        "BloodPressure": 72,
+        "SkinThickness": 35,
+        "Insulin": 0,
+        "BMI": 33.6,
+        "DiabetesPedigreeFunction": 0.627,
+        "Age": 50
+      }
+    ]
+  },
+  "GlobalParameters": {}
+}
 
 ---
 
