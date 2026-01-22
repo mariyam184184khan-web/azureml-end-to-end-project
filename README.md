@@ -135,6 +135,4 @@ A POST request containing patient health attributes was sent to the REST endpoin
   }
 }
 
----
-## Author
-**Mariyam Khan**  
+
