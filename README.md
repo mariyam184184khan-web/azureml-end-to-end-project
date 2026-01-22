@@ -98,8 +98,6 @@ This pipeline enables real-time predictions and serves as the foundation for dep
 The trained model was deployed as a real-time inference endpoint using Azure Machine Learning Designer.  
 The deployment exposes the model as a REST API hosted on **Azure Container Instance**, allowing external clients to send HTTP POST requests and receive predictions in real time.
 
-### Endpoint Status
-![Endpoint Status](screenshots/endpoint-status.png)
 
 ---
 
@@ -136,5 +134,7 @@ A POST request containing patient health attributes was sent to the REST endpoin
     ]
   }
 }
+
+---
 ## Author
 **Mariyam Khan**  
